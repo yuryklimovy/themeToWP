@@ -1,45 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script src="js/vegas.js" charset="utf-8"></script>
-    <script src="js/script.js" charset="utf-8"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/vegas.css">
-    <link rel="stylesheet" href="css/style.css">
 
-    <!--[if lt IE 9]>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="js/vegas.js" charset="utf-8"></script>
+  <script src="js/script.js" charset="utf-8"></script>
+
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/vegas.css">
+  <link rel="stylesheet" href="css/default.css">
+
+  <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <div class="nav">
-        <div class="btn">
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-        <div class="fierosochka">
+</head>
 
+<body>
+  <div class="wrapper">
+    <div class="nav">
+      <div class="menu-button-outer">
+        <div class="btn">
+          <div class="btn__firstLine"></div>
+          <div class="btn__secondLine"></div>
+          <div class="btn__thirdLine"></div>
         </div>
       </div>
-      <div class="main">
-        <div class="inner-screen-left">
+      <div class="fierosochka">
+      </div>
+      <div class="menu">
+        <ul class="menu__list">
+          <li class="menu__item"><a href="#" class="menu__link">home</a></li>
+          <li class="menu__item"><a href="#" class="menu__link" id="news">news</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">about</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="main">
+      <div class="inner-screen-left">
 
-        </div>
-        <div class="inner-screen-right">
+      </div>
+      <div class="inner-screen-right" id="test">
+        <div class="bg-wrapper">
 
         </div>
       </div>
     </div>
+  </div>
 
-  </body>
+</body>
+
 </html>

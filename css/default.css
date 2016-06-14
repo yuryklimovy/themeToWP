@@ -1,0 +1,161 @@
+
+
+html, body{
+  width: 100%;
+  height: 100%;
+  /*overflow: hidden;*/
+}
+.nav{
+  background: white;
+  height: 100vh;
+  width: 5.88542vw;
+  float: left;
+  transition: 1s;
+  z-index: 100;
+  position: fixed;
+}
+.fierosochka{
+  position: absolute;
+  right: -3px;
+  top: 0;
+  width: 3px;
+  height: 1px;
+  background: #c2ac7e;
+
+}
+
+.open{
+  width: 8.82813vw;
+}
+.menu-button-outer{
+  top: 5px;
+  left: 37px;
+  cursor: pointer;
+  position: relative;
+}
+.btn{
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  background-color: #fff;
+}
+.btn div{
+  position: absolute;
+  background: #c2ac7e;
+  height: 4px;
+  width: 100%;
+}
+.btn__firstLine{
+  top: 20%;
+  transition: transform 0.5s;
+}
+
+.btn__secondLine{
+  top: 50%;
+  opacity: 1;
+  transition: 1s;
+
+}
+.btn__thirdLine{
+  top: 80%;
+  transition: transform 0.5s;
+}
+
+.btn__firstLine-open{
+  transform: rotate(45deg);
+}
+
+.btn__secondLine-open{
+  opacity: 0;
+}
+.btn__thirdLine-open{
+  transform: rotateZ(-45deg);
+}
+.menu{
+  position: absolute;
+  top: 10%;
+  left: 0;
+  width: 8.82813vw;
+
+}
+.menu__list{
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  visibility: hidden;
+}
+.menu__item{
+  list-style: none;
+  display: block;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  margin-left: -20px;
+  transition: 1s;
+}
+.menu__item-open{
+  visibility: visible;
+  opacity: 1;
+  margin-left: 0;
+}
+.menu__item-open:hover{
+  background: #c2ac7e;
+  width: 8.82813vw;
+}
+.menu__item-open:hover .menu__link{
+  color: #fff;
+}
+.menu__link{
+  text-align: left;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  text-transform: uppercase;
+  font-size: calc(0.7596296296296296vh + 0.2966666666666667vw);
+  transition: 0.5s;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #6e6e6e;
+  padding: 19px 0 19px 2.1vw;
+}
+.main{
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+.inner-screen-left{
+  height: 1px;
+  opacity: 0;
+  display: inline-block;
+  width: 32%;
+  background: lightgrey;
+  transition: 2s;
+}
+.inner-screen-left-active{
+  opacity: 1;
+  height: 100vh;
+  display: block;
+}
+.inner-screen-right{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  float: right;
+  opacity: 0;
+  width: 68%;
+  height: 1px;
+  background: grey;
+  transition: 2s;
+
+}
+.inner-screen-right-active{
+  opacity: 1;
+  height: 100vh;
+  display: block;
+}
+.bg-wrapper{
+  width: 100%;
+  height: 100vh;
+}
