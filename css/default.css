@@ -5,6 +5,14 @@ html, body{
   height: 100%;
   /*overflow: hidden;*/
 }
+.logo{
+  position: absolute;
+  right: 10%;
+  top: 10%;
+  font-size: calc(5.307407407407407vh + 1.61875vw);
+  color: #c2ac7e;
+  z-index: 10000;
+}
 .nav{
   background: white;
   height: 100vh;
@@ -75,7 +83,7 @@ html, body{
 }
 .menu{
   position: absolute;
-  top: 20%;
+  top: 10%;
   left: 0;
   width: 100%;
 
@@ -123,7 +131,29 @@ html, body{
   font-weight: 300;
   letter-spacing: 1px;
   color: #6e6e6e;
-  padding: 10px 19px 10px 0;
+  padding: 15px 19px 10px 0;
+}
+.socials{
+  position: absolute;
+  bottom: 15%;
+  width: 100%;
+}
+.socials__list{
+  display: block;
+  padding: 0;
+}
+.socials__item{
+  display: block;
+  list-style: none;
+  margin-top: 10px;
+  text-align: center;
+}
+.socials__link{
+  color: #b0b0b0;
+  font-size: 19px;
+}
+.socials__link:hover{
+  color: #d0d0d0;
 }
 .main{
   height: 100vh;
@@ -144,17 +174,38 @@ html, body{
   height: 100vh;
   display: block;
 }
+.navigation{
+  position: absolute;
+  left: -50px;
+  top: 20%;
+  overflow: hidden;
+  z-index: 11000;
+
+}
+.navigation__left, .navigation__right{
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  background: rgba(0,0,0,0.8);
+  text-align: center;
+  color: #c2ac7e;
+}
+.navigation__left{
+  float: left;
+}
+.navigation__right{
+  float: right;
+}
 .news{
   position: absolute;
   width: 70vw;
   height: 50vh;
-  right: -170%;
+  left: 10%;
   top: 30%;
-
   z-index: 9999;
   opacity: 0;
   visibility: hidden;
-  transition: 0.5s;
+  transition: 1s;
 
 }
 .news__hedline{
@@ -166,6 +217,8 @@ html, body{
   color: #5d5d5d;
   font-size: 14px;
   line-height: 21px;
+  overflow-x: auto;
+  height: 300px;
 }
 .news-active{
   visibility: visible;
